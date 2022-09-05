@@ -1,9 +1,6 @@
 Day 1:
 
 - Advanced data structures
-    - namedtuple
-    - dict variants
-
 - function objects, function scoping
 - Inner functions
 - attribute lookup in objects
