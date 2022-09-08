@@ -7,7 +7,7 @@ def handler(signum, frame):
     print(f'Got your signal!')
 
 
-signal.signal(signal.USR1, handler)
+signal.signal(signal.SIGUSR1, handler)
 
 
 name = input('Enter your name: ').strip()
