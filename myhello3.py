@@ -12,7 +12,9 @@ def handler(signum, frame):
     raise TooSlowException('ha ha!')
 
 
-signal.signal(signal.SIGINT, handler)
+signal.signal(signal.SIGALARM, handler)
+
+signal.alarm(3)
 
 
 name = input('Enter your name VERY VERY FAST: ').strip()
