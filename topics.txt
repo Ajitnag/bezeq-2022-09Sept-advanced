@@ -19,5 +19,6 @@ Day 3:
 - working with directories
 - file timestamps, hash functions, popular formats
 - logging
+- debugging (PySnooper, among others)
 - threads, processes, multiprocessing
 - simple Web apps for monitoring
