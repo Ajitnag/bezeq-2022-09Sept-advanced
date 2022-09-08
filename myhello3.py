@@ -3,8 +3,13 @@
 import signal
 
 
+class TooSlowException(Exception):
+    pass
+
+
 def handler(signum, frame):
     print(f'Too late!')
+    raise TooSlowException('ha ha!')
 
 
 signal.signal(signal.SIGINT, handler)
