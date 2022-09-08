@@ -4,10 +4,10 @@ import signal
 
 
 def handler(signum, frame):
-    print(f'Got your signal!')
+    print(f'Got your control-C!')
 
 
-signal.signal(signal.SIGUSR1, handler)
+signal.signal(signal.SIGINT, handler)
 
 
 name = input('Enter your name: ').strip()
