@@ -4,7 +4,7 @@ import signal
 
 
 def handler(signum, frame):
-    print(f'Got your control-C!')
+    print(f'Too late!')
 
 
 signal.signal(signal.SIGINT, handler)
