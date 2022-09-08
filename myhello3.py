@@ -16,5 +16,8 @@ signal.signal(signal.SIGALRM, handler)
 
 signal.alarm(3)   # in another 3 seconds, send this signal
 
-name = input('Enter your name VERY VERY FAST: ').strip()
-print(f'Hello, {name}!')
+try:
+    name = input('Enter your name VERY VERY FAST: ').strip()
+    print(f'Hello, {name}!')
+except TooSlowException as e:
+    print('Too slow!')
