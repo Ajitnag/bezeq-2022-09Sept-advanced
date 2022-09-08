@@ -12,11 +12,11 @@ Day 2:
 - generators
 - decorators
 - context managers
-- working with files
-- working with directories
 
 Day 3:
 
+- working with files
+- working with directories
 - file timestamps, hash functions, popular formats
 - logging
 - threads, processes, multiprocessing
