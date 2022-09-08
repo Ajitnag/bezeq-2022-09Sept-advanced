@@ -12,7 +12,7 @@ def handler(signum, frame):
     raise TooSlowException('ha ha!')
 
 
-signal.signal(signal.SIGALARM, handler)
+signal.signal(signal.SIGALRM, handler)
 
 signal.alarm(3)   # in another 3 seconds, send this signal
 
