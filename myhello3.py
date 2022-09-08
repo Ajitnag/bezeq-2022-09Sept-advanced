@@ -14,9 +14,7 @@ def handler(signum, frame):
 
 signal.signal(signal.SIGALARM, handler)
 
-signal.alarm(3)
-
+signal.alarm(3)   # in another 3 seconds, send this signal
 
 name = input('Enter your name VERY VERY FAST: ').strip()
-
 print(f'Hello, {name}!')
